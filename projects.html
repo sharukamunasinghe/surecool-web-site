@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | Sure Cool Air Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Logo">
+            <div class="company-name">
+                <h1>Sure Cool Air</h1>
+                <p>Engineering & Trading (Pvt) Ltd</p>
+            </div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#request">Get a Quote</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <div class="header-socials">
+                    <a href="https://www.facebook.com/surecoool/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </ul>
+        </nav>
+        <div class="mobile-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <div class="float-socials">
+        <a href="https://wa.me/94779744251" target="_blank" class="wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://wa.me/94707254907" target="_blank" class="wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/surecoool/" target="_blank" class="fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com" target="_blank" class="tt" title="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <div class="page-banner">
+        <div>
+            <h2>Our Projects</h2>
+            <p style="color: var(--text-grey);">Explore our recent successful engineering and installation works</p>
+        </div>
+    </div>
+
+    <section id="gallery">
+        <div class="section-header">
+            <h2>Project <span>Portfolio</span></h2>
+            <p>Click on a project to view details and photos.</p>
+        </div>
+        
+        <div class="gallery-grid">
+            <!-- Project 1 -->
+            <div class="gallery-item" onclick="openProject(1)">
+                <img src="images/proj1.jpg" alt="Project 1">
+                <div class="gallery-overlay">
+                    <span>Project No: 01</span>
+                    <h4>Commercial AC Setup</h4>
+                    <div class="view-btn">View Details</div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="gallery-item" onclick="openProject(2)">
+                <img src="images/proj2.jpg" alt="Project 2">
+                <div class="gallery-overlay">
+                    <span>Project No: 02</span>
+                    <h4>Industrial Wiring</h4>
+                    <div class="view-btn">View Details</div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="gallery-item" onclick="openProject(3)">
+                <img src="images/proj3.jpg" alt="Project 3">
+                <div class="gallery-overlay">
+                    <span>Project No: 03</span>
+                    <h4>Security System Setup</h4>
+                    <div class="view-btn">View Details</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Modal 1 -->
+<div id="modal-1" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeProject(1)">&times;</span>
+        <div class="modal-header">
+            <span>Project No: 01</span>
+            <h3>Commercial AC Setup</h3>
+        </div>
+        <p style="color: var(--text-grey);">Centralized Air Conditioning system installed for a commercial building...</p>
+        <div class="modal-photos">
+            <!-- images folder එක ඇතුළේ මේ නම් වලින් ෆොටෝ සේව් කරන්න -->
+            <img src="images/proj1.jpg" alt="Photo 1">
+            <img src="images/proj1_b.jpg" alt="Photo 2">
+            <img src="images/proj1_c.jpg" alt="Photo 3">
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal-2" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeProject(2)">&times;</span>
+        <div class="modal-header">
+            <span>Project No: 02</span>
+            <h3>Industrial Wiring</h3>
+        </div>
+        <p style="color: var(--text-grey);">Complete electrical panel installation...</p>
+        <div class="modal-photos">
+            <img src="images/proj2.jpg" alt="Photo 1">
+            <img src="images/proj2_b.jpg" alt="Photo 2">
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div id="modal-3" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeProject(3)">&times;</span>
+        <div class="modal-header">
+            <span>Project No: 03</span>
+            <h3>Security System Setup</h3>
+        </div>
+        <p style="color: var(--text-grey);">CCTV camera and network cabling...</p>
+        <div class="modal-photos">
+            <img src="images/proj3.jpg" alt="Photo 1">
+            <img src="images/proj3_b.jpg" alt="Photo 2">
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Sure Cool Air Engineering And Trading (Pvt) Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
